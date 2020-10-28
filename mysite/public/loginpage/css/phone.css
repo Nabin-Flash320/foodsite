@@ -1,0 +1,36 @@
+@media only screen and (max-width: 1060px) {
+    .container{
+        background-color:#3c464f;
+        position: relative;
+    }
+
+    .box2{
+        position:absolute;
+        top: 46%;
+        right: -13%;
+        transform: translate(-50%, -50%);
+        border-radius: 1px;
+        opacity: 0.8;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .container{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+    .box2{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        padding: 8px;
+    }
+}

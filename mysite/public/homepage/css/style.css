@@ -1,0 +1,316 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* css varaiable */
+:root{
+    --navbar-height:59px;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* navigation bar */
+#navbar{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/*navigation bar: logo and image */
+.logo{
+margin: 10px 25px;
+    
+}
+
+.logo img{
+margin:10px 25px;
+height: 90px;
+width: 100px;
+
+
+}
+
+
+
+
+/*navigation bar: list styling */
+
+
+#navbar ul{
+    display: flex;
+
+}
+
+#navbar::before{
+    content: " ";
+    background-color: black;
+    position: absolute;
+    top: 0px;;
+    left:0px;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.4;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.6rem;
+    color:white;
+}
+
+#navbar ul li a{
+    display: block;
+    margin: 5px 15px;
+    padding: 5px 25px;
+    color:white;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    text-decoration: underline;
+    color:black;
+    background-color: white;
+    border-radius: 15px;
+    
+}
+
+#navbar ul li a:active{
+    font-size: 2rem;
+    color:rgb(63, 3, 3);
+    background-color: white;
+    border-radius: 15px;
+}
+
+#login_btn{
+    position: absolute;
+    top: 50px;
+    left: 1050px;
+    text-align: center;
+    width: 15%;
+    height: 25%;
+    background-color: white;
+    color: blue;
+    cursor: pointer;
+    padding: 0;
+    border: 1.5px solid darkblue;
+    background-color: Transparent;
+    font-size:24px;
+
+}
+
+#login_btn:hover{
+    background-color: gray;
+    color: white;
+    cursor: pointer;    
+}
+
+
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 25px;
+    justify-content: center;
+    align-items: center;
+    height:485px;
+}
+
+#home::before{
+    content: " ";
+    background-image: url('../img/bg2.jpg');
+    background-position: no-repeat;
+    position: absolute;
+    background-size: 100% auto;
+    height:100%;
+    width: 100%;
+    top:0;
+    left:0;
+    z-index:-1;
+    opacity:0.79;
+}
+
+#home h1{
+    color:white;
+    text-align: center;
+}
+
+#home p{
+    text-align: center;
+    color:white;
+    font-size: 1.3rem;
+}
+
+
+/* service section */
+
+#services{
+    display:flex;
+
+}
+
+#services .box{
+    border: 2px solid black;
+    border-radius: 23px;
+    background-color: lightgray;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    min-height: 300px;
+    max-height: 100%;
+}
+.box{
+    min-height: 200px;
+    max-height: 100%;
+    min-width: 10px;
+    max-width: 20%;
+
+    margin: auto;
+}
+
+#services .box img{
+    width:80%;
+    margin: auto;
+    display:block;
+}
+
+#services .box  p{
+    font-size: 1.2rem;
+}
+
+
+/* client section */
+
+#client-section{
+    position: relative;
+    margin:60px 0px 0px 0px;
+    padding-bottom: 30px;
+}
+
+#client-section::before{
+    content: " ";
+    background-image: url('../img/bg1.jpg');
+    background-position: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    opacity:0.79;
+} 
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding:5px 25px;
+}
+
+#clients img{
+    height: 200px;
+    width: 400px;
+}
+
+
+
+/* contact us */
+
+#contact{
+    position: relative;     
+}
+
+
+#contact::before{
+    position: absolute;
+    content: " ";
+    background-image: url('../img/cont.jpg');
+    background-position: no-repeat center center/cover;
+    background-size: 100% auto;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.78;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+    padding-bottom: 34px;   
+}
+
+/* #contact-box form{
+    width: 40%; 
+} */
+
+
+#contact-box input, #contact-box textarea{
+    widows: 100%;
+    display:block;
+    padding:5px 25px;
+    border-radius: 12px;
+    font-size: 1.1 rem;
+}
+
+
+
+#contact-box label{
+    font-size: 20px;
+}
+
+
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px 25px;
+}
+
+
+/* utillity classes */
+
+.h-primary{
+    font-size: 2rem;
+    padding:12px;
+}
+
+.h-secondary{
+    text-align: 1.3rem;
+}
+
+.btn{
+    /* padding:10px;
+    border:2px solid black;
+    color:black;
+    font-weight: bold;
+    border-radius: 12px;
+    font-size: 1rem; */
+    cursor: pointer;
+
+    margin-top:20px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 17px 20px;
+    color: white;
+}
+.btn:hover{
+    transform: scale(1.3);
+    transition: all 0.3s ease;
+    background-color: seagreen;
+}
+
+.center{
+  text-align: center;  
+}
+
+
