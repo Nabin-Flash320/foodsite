@@ -12,13 +12,14 @@
 <body>
     <div class="container">
     <div class="box2">
-        <img src="./loginpage/img/back.png">
+        <img src="./loginpage/img/back.png" onclick="location.href='{{ route('homepage') }}'">
         <h1 class="head">Login</h1>
-        <form class="form"action="">
+        <form class="form" method="post" action="{{ route('homepage') }}">
+        @csrf
             <input type="email" name="Email" placeholder="Email">
             <input type="password" name="Password" placeholder="Password">
 
-            <input type="button" value="Log in" class="btn">
+            <input type="button" value="Log in" class="btn" onclick="location.href='{{ route('homepage') }}'">
 
         </form>
     <br>

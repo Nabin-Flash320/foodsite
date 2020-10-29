@@ -114,6 +114,24 @@ width: 100px;
 }
 
 
+#signin_btn{
+    position: absolute;
+    top: 60px;
+    left: 950px;
+    background: none;
+    border: 0;
+    padding: 0;
+    font-size: 20px;
+    color: blue;
+    cursor: pointer;
+
+}
+
+#signin_btn:hover{
+    color: white;
+}
+
+
 /* home section */
 #home{
     display: flex;

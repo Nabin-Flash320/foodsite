@@ -15,7 +15,7 @@
         </div>
 
         <ul>
-            <li class="items"><a href="">Home</a></li>
+            <li class="items"><a href="{{ route('homepage') }}">Home</a></li>
             <li class="items"><a href="">Services</a></li>
             <li class="items"><a href="">About Us</a></li>
             <li class="items"><a href="">Contact Us</a></li>
@@ -23,7 +23,11 @@
         </ul>
 
         <div>
-            <button id="login_btn">Login</button>
+            <button id="signin_btn" >Sign in</button>
+        </div>
+
+        <div>
+            <button id="login_btn" onclick="location.href='{{ route('logpage') }}'">Login</button>
         </div>
 
     </nav>
