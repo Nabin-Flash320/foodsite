@@ -1,0 +1,121 @@
+
+@import url('httpss://fonts.googleapis.com/css?family=Roboto');
+
+
+
+.signup-form-container{
+    display: none;
+    background:linear-gradient(to right, #183030 0%, #385D6C 50%, #183030 99%);
+    height: 669px;
+    border: none;
+    padding-top: 40px;
+
+}
+
+.forms{
+    font-family: "Roboto", sans-serif;
+    max-width: 500px;
+    height: 500px;
+    border: 1px solid #63c5da;
+    border-radius: 10px;
+    background:linear-gradient(to right, #63c5da 0%, #757c88 50%, #63c5da 99%);
+    margin: 30px auto;
+    margin-top: 150px auto;
+}
+
+.form-header{
+    text-align: center;
+    height: 90px;
+    padding-top: 30px;
+    text-shadow: 2px 2px #63c5da;
+    border-radius: 10px;
+}
+
+.form-header h1{
+    width: 450px;
+    padding-left: 0px;
+}
+
+.form-header img{
+    height:50px;
+    width: 50px;
+}
+
+.form-header img:hover{
+    transform: scale(1.1);
+}
+
+.image{
+    float: left;
+    padding-left: 20px;
+    width: 5%;
+}
+
+.form-body{
+    font-size: 20px;
+    box-sizing: border-box;
+    height: 300px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 20px;
+    border: 1px solid #63c5da;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.form-datas{
+    margin-bottom: 20px;
+    padding-left: 2px;
+}
+
+.lefts{
+    float: left;
+    width: 49%
+}
+
+.rights{
+    float: right;
+    width: 49%;
+}
+
+.input{
+    font-size: 20px;
+    box-sizing: border-box;
+    height: 30px;
+    width: 100%;
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+}
+
+.form-footer{
+    border: 1px solid #63c5da;
+    border-radius: 10px;
+    height: 45px;
+}
+
+.footer-span{
+    float:left;
+    margin-top: 60px;
+    padding-left: 15px;
+    font-style: italic;
+    font-weight: thin;
+}
+
+.signup-button{
+    display:inline-block;
+    padding:10px 20px;
+    background-color: #1BBA93;
+    font-size:17px;
+    border:none;
+    border-radius:5px;
+    color:#bcf5e7;
+    cursor:pointer;
+    float: right;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+
+.signup-button:hover{
+    background-color: green;
+    color:white;
+}

@@ -19,9 +19,6 @@ Route::get('/', function () {
     return view('homepage/homepage');
 })->name('homepage');
 
-Route::get('login', [loginpagecontroller::class, 'toLoginPage'])->name('logpage');
-
 Route::get('home', function(){
 	return view('welcome');
 })->name('home');
-
